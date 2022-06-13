@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DiKasir.Ind</string>
+    <string name="desc1">Dengan menggunakan dikasir anda tidak perlu lagi mengantri untuk membayar, cukup memesan apa yang anda inginkan dan langsung bayar dari Handphone anda.</string>
+    <string name="tittle1">Selamat Datang di DiKasir.Ind</string>
+    <string name="tittle2">Are You Ready?</string>
+    <string name="nama">Barang</string>
+    <string name="stock">Stock</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/welcome_Animation"
+        android:layout_width="325dp"
+        android:layout_height="410dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/moodydog"
+        tools:layout_conversion_absoluteHeight="0dp"
+        tools:layout_conversion_absoluteWidth="0dp"
+        tools:layout_editor_absoluteY="160dp">
+
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tittle1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="555dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/desc1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="parent"
+        tools:layout_editor_absoluteY="632dp" />
+
+    <TextView
+        android:id="@+id/textViewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap Here To Start :)"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="246dp"
+        android:layout_height="47dp"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:srcCompat="@drawable/dikasirind"
+        tools:layout_editor_absoluteY="175dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dikasirlogo"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

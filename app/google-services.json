@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348695611189",
+    "project_id": "dikasir-ecd84",
+    "storage_bucket": "dikasir-ecd84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348695611189:android:02c293dc27ec4b62d7ee7c",
+        "android_client_info": {
+          "package_name": "com.dicoding.dikasirind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348695611189-8m4ls4j5d63t2ssgu2blifc3auc6q0br.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRM2EU0jUJitYdXjdNe9Oqeno8mzoKTT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348695611189-8m4ls4j5d63t2ssgu2blifc3auc6q0br.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

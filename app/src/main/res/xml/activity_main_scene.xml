@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000"
+        motion:autoTransition="animateToEnd">
+        <KeyFrameSet>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView5"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="410dp"
+            android:layout_width="325dp"
+            android:id="@+id/welcome_Animation"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="136dp" />
+        <Constraint
+            android:layout_height="47dp"
+            android:layout_width="246dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView5"
+            motion:layout_constraintHorizontal_bias="0.496" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="44dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/welcome_Animation" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="16dp"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="47dp"
+            android:layout_width="246dp"
+            android:id="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView5"
+            motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/menu2"
+        motion:deriveConstraintsFrom="@+id/end" >
+        <Constraint
+            motion:layout_editor_absoluteY="559dp"
+            android:layout_height="15dp"
+            android:layout_width="180dp"
+            android:id="@+id/textView"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            motion:layout_editor_absoluteY="584dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/welcome_Animation"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.105" />
+        <Constraint
+            android:layout_height="410dp"
+            android:layout_width="325dp"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:id="@+id/welcome_Animation"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="112dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="4dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/textView2"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/welcome_Animation" />
+    </ConstraintSet>
+    <ConstraintSet
+        android:id="@+id/menu3"
+        motion:deriveConstraintsFrom="@+id/menu2" >
+        <Constraint
+            motion:layout_editor_absoluteY="553dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:layout_marginTop="264dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.0"
+            android:layout_marginBottom="352dp" />
+        <Constraint
+            android:layout_height="410dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="325dp"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView2"
+            motion:layout_constraintStart_toEndOf="parent"
+            android:id="@+id/welcome_Animation" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/textView2"
+            motion:layout_editor_absoluteY="632dp"
+            motion:layout_constraintEnd_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintHorizontal_bias="0.497"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView3"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView5"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.449" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintHorizontal_bias="0.544"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textViewStart"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0.406" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/menu2" >
+        <OnSwipe motion:dragDirection="dragLeft" />
+        <OnClick />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/menu2"
+        motion:constraintSetEnd="@+id/menu3" >
+        <OnSwipe motion:dragDirection="dragLeft" />
+    </Transition>
+</MotionScene>
